@@ -1,0 +1,155 @@
+.warehouseCalc{
+  .ivu-select-input {
+    font-size: 12px;
+  }
+}
+.calcCard {
+  margin-bottom: 14px;
+}
+.calcCard--header{
+  margin-bottom: 10px;
+}
+// 指标总览
+.flexFull{
+  display: flex;
+  .flexFull--item + .flexFull--item {
+    margin-left: 14px;
+  }
+  .ivu-card-body {
+    height: 100%;
+  }
+}
+.flexFull--title {
+  height: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-weight: 500;
+}
+.flexFull--item{
+  flex: 1;
+  height: 146px;
+  &.cursorPointer{
+    cursor: pointer;
+  }
+  .targetRate{
+    font-size: 46px;
+    line-height: 54px;
+    height: 54px;
+    position: relative;
+    top: 2px;
+  }
+  .content{
+    & > p:first-child{
+      margin-bottom: 7px;
+    }
+  }
+  .textHeading {
+    font-size: 24px;
+    + .small {
+      white-space: nowrap;
+      position: absolute; 
+      // bottom: 17px;
+      span {
+        display: inline-block; margin: 0 3px;
+      }
+    }
+  }
+  // 
+  &.bg1 {
+    background:linear-gradient(144deg,rgba(90,129,255,1) 0%,rgba(67,173,255,1) 100%);
+    &, * {
+      color: #ffffff;
+    }
+  }
+  &.bg2 {
+    background:linear-gradient(138deg,rgba(255,113,138,1) 0%,rgba(255,153,136,1) 100%);
+    &, * {
+      color: #ffffff;
+    }
+  }
+  &.bg3 {
+    background:linear-gradient(138deg,rgba(0,187,241,1) 0%,rgba(51,226,184,1) 100%);
+    &, * {
+      color: #ffffff;
+    }
+  }
+  &.bg1:hover {
+    box-shadow:0px 6px 12px 0px rgba(199,211,245,0.75);
+  }
+  &.bg2:hover {
+    box-shadow:0px 6px 12px 0px rgba(252,181,178,0.3);
+  }
+  &.bg3:hover {
+    box-shadow:0px 6px 12px 0px rgba(79,189,179,0.3);
+  }
+  &.cursorPointer:hover:not(.targetActive){
+    position: relative;
+    top: -2px;
+    transition: all 0.2s;
+  }
+  &.cursorPointer.ivu-card-bordered {
+    border: 0;
+  }
+  &.targetActive {
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      bottom: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      line-height: 0;
+      border: 10px solid transparent;
+      border-bottom: 0;
+      border-top: 10px solid rgba(255,255,255,1);
+    }
+    &.bg1 {
+      &:after{
+        border-top: 10px solid rgba(67,173,255,1);
+      }
+      box-shadow:0px 6px 12px 0px rgba(199,211,245,0.75);
+      border-color: transparent;
+    }
+    &.bg2 {
+      &:after{
+        border-top: 10px solid rgba(255,153,136,1);
+      }
+      box-shadow:0px 6px 12px 0px rgba(252,181,178,0.3);
+      border-color: transparent;
+    }
+    &.bg3 {
+      &:after{
+        border-top: 10px solid rgba(51,226,184,1);
+      }
+      box-shadow:0px 6px 12px 0px rgba(79,189,179,0.3);
+      border-color: transparent;
+    }
+  }
+  .titleCardType {
+    height: 48px;
+    // font-size: 18px;
+    margin-bottom: 6px;
+    + .content {
+      > p:first-child {
+        margin-bottom: 1px;
+      }
+    }
+    .bigTitle {
+      display: inline-block; 
+      margin: 4px 4px 0 0;
+      font-size: 18px;
+    }
+  }
+  .subTitle {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  .small {
+    font-size: 12px;
+  }
+}
+// 
+

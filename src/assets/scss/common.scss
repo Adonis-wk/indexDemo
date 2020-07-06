@@ -1,0 +1,264 @@
+
+body{
+  // font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // background-color: #f9f9fb;
+  // font-size: 12px;
+  min-width: 1200px;
+}
+img{
+  max-width: 100%;
+}
+a, .linkText{
+  color: #308CEF;
+}
+
+.inlineB{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h2{
+  font-size: 20px;
+  line-height: 24px;
+}
+h3{
+  font-size: 18px;
+  line-height: 22px;
+}
+h4{
+  font-size: 16px;
+  line-height: 20px;
+}
+h5{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .textHeading {
+  color: #333333;
+}
+
+.fontHelp{
+  color: #999;
+  font-size: 12px;
+}
+
+.small {
+  font-size: 80%;
+}
+.text-center{
+  text-align: center;
+}
+
+.nullChart{
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tipIconHelp{
+  cursor: pointer;
+  color: #4c9fff;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  top: -2px;
+}
+
+// 页面公共样式
+.yscLayout{
+  .ivu-select-dropdown{
+    z-index: 999;
+  }
+}
+// card
+.yscCard{
+  margin-bottom: 15px;
+  .ivu-card-body{
+    padding: 14px 16px;
+  }
+  .ivu-card-head{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &, h4{
+      line-height: 30px;
+    }
+  }
+  p {
+    font-size: 12px;
+  }
+  .yscCardFooter{
+    margin: 10px -16px 0;
+    padding: 20px 16px 8px;
+    border-top: 1px solid #eee;
+  }
+  // card head 扩展行样式
+  .yscExtraH{
+    margin-top: -5px;
+  }
+  // 
+  .ivu-btn-text {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &.headerNoborder {
+    .ivu-card-head {
+      border-bottom: 0;
+    }
+    .ivu-card-body {
+      padding-top: 0!important;
+    }
+  }
+}
+// 标题行
+.yscCardTitle{
+  font-weight: normal;
+  margin-left: 10px;
+  display: inline-block;
+  small,
+  .ivu-select{
+    margin-right: 5px;
+  }
+  >small{
+    display: inline-block;
+    margin-top: 7px;
+  }
+  >.ivu-select{
+    vertical-align: top;
+  }
+  // 
+  .ivu-btn + .ivu-btn{
+    margin-left: 5px;
+  }
+}
+// card table
+.yscCardTable{
+  th, td{
+    // padding: 8px;
+    font-weight: normal;
+  }
+  .ivu-table-cell{
+    padding: 8px;
+  }
+  .ivu-card-body{
+    padding: 0;
+    tr:last-child{
+      td{
+        border-bottom: 0;
+      }
+    }
+  }
+  .ivu-table-border td:last-child,
+  .ivu-table-border th:last-child {
+    border-right: 0;
+  }
+  // .ivu-table th,
+  .ivu-table-wrapper{
+    border: 0;
+  }
+  .ivu-table:after, .ivu-table:before{
+    display: none;
+  }
+  //
+  .conCenter{
+    th, td{
+      text-align: center;
+    }
+  }
+  .ivu-table-large{
+    font-size: 12px;
+    th, td{
+      height: 50px;
+    }
+  }
+  .ivu-table-footer{
+    border-top: 1px solid #e8eaec;
+    height: auto;
+    padding: 10px 16px;
+    text-align: right;
+  }
+}
+// 
+.yscTable{
+  th, td{
+    font-weight: normal;
+  }
+  .ivu-table-cell{
+    padding: 8px;
+  }
+  .ivu-table-footer{
+    border-top: 1px solid #e8eaec;
+    height: auto;
+    padding: 8px 16px;
+    text-align: right;
+  }
+  .ivu-btn-text {
+    color: #0275d8;
+  }
+}
+// poptip
+.yscPoptip{
+  .ivu-poptip-inner{
+    white-space: normal;
+  }
+  .title{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .context{
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+// card tabs
+.yscCardTabs{
+  .ivu-card-head{
+    border-color: #ffffff;
+  }
+  .ivu-tabs-bar{
+    padding-right: 20px;
+  }
+  .ivu-card-body{
+    padding: 0;
+    .yscTabsFooter{
+      text-align: right;
+      margin-bottom: 0;
+      margin-top: 20px;
+      padding: 20px 16px 20px 0;
+      border-top: 1px solid #eee;
+      .ivu-btn{
+        margin-left: 8px;
+      }
+    }
+  }
+}
+// row col
+.yscRowCharts{
+  .ivu-col{
+    padding: 20px;
+  }
+  &.colLines{
+    // box-shadow: 0 0 6px rgba(44,56,90,.08);
+    .ivu-col + .ivu-col{
+      border-left: 1px solid #eee;
+    }
+  }
+}
+// yscForm
+.yscFormSm{
+  .ivu-form-item {
+    margin-bottom: 10px;
+    &.yscCardFooter {
+      margin-bottom: 0;
+    }
+  }
+  .yscCardFooter{
+    text-align: right;
+  }
+}
+
+
+@import "calc.scss";
