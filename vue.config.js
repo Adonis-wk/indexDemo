@@ -4,8 +4,8 @@ module.exports = {
     host: 'qjzn.club.com',
     port: 8088,
     proxy: {
-      '/authc/*': {
-        'target': 'http://qjzn.server.club.com',
+      '/help': {
+        'target': 'http://bpp-api.jd.com/bppapi/sz/',
         'secure': false,
         'changeOrigin': true
       }
