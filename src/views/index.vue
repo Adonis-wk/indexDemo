@@ -241,7 +241,7 @@ export default {
   color: #fff;
   font-family: "Source Sans Pro";
   background-size: 100%;
-  background-image: url("../assets/images/Starry.jpg");
+  background-image: url("../assets/images/Starry.png");
   position: relative;
   #bgd {
     height: 100vh;
